@@ -8,7 +8,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 120px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100px;
     letter-spacing: 20px;
 }
