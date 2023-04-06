@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
