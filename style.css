@@ -19,6 +19,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   --color: #FAFAFA;
+  overflow: hidden;
 }
 
 html, body {
@@ -98,6 +99,26 @@ body {
   4%, 100% {  text-shadow: none; transform: none; }
 }
 
+.snap {
+    margin-right: 6px;
+    margin-left: 6px;    
+}
+
+.unsplash {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.insta {
+    margin-right: 6px;
+    margin-left: 6px;    
+}
+
+.socials{
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+}
 
 /* body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
