@@ -99,6 +99,16 @@ body {
   4%, 100% {  text-shadow: none; transform: none; }
 }
 
+.mail {
+    margin-right: 2px;
+    margin-left: 8px;
+}
+
+.telegram {
+    margin-right: 6px;
+    margin-left: 1px;
+}
+
 .snap {
     margin-right: 6px;
     margin-left: 6px;    
@@ -107,11 +117,12 @@ body {
 .unsplash {
     margin-right: 6px;
     margin-left: 6px;
+    padding-bottom: 3px;
 }
 
 .insta {
     margin-right: 6px;
-    margin-left: 6px;    
+    margin-left: 6px;
 }
 
 .socials{
@@ -126,7 +137,6 @@ body {
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
