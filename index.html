@@ -633,35 +633,28 @@
 	<script src="js/main.js"></script>
 	
 	<script>
-	  // Function to adjust the layout once all images are loaded
-	  function adjustLayoutAfterImagesLoaded() {
-		  var $grid = $('.grid').isotope({
-		    itemSelector: '.grid-item',
-		    percentPosition: true,
-		    layoutMode: 'fitRows' // Change layout mode to 'fitRows'
-		  });
+		// Function to check if the user is using a mobile device
+		function isMobileDevice() {
+		  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+		}
 	  
-		  // layout Isotope after each image loads
-		  $grid.imagesLoaded().progress(function () {
-		    $grid.isotope('layout');
-		  });
-}
-  
-	  // Call the layout adjustment function after the page is fully loaded
-	  $(window).on('load', function () {
-	    adjustLayoutAfterImagesLoaded();
-	  });
-  
-	  // Adjust the layout again after a short delay (e.g., 500ms) for mobile devices
-	  $(window).on('resize', function () {
-	    clearTimeout(window.isotopeResizeTimer);
-	    window.isotopeResizeTimer = setTimeout(function () {
-	      adjustLayoutAfterImagesLoaded();
-	    }, 500);
-	  });
-	</script>
-
-
+		// Function to reload the page after it has finished loading
+		function reloadAfterLoad() {
+		  // Check if the user is on a mobile device
+		  if (isMobileDevice()) {
+			// Reload the page after 1 second
+			setTimeout(function () {
+			  window.location.reload();
+			}, 1000);
+		  }
+		}
+	  
+		// Call the reloadAfterLoad function when the page is fully loaded
+		$(window).on('load', function () {
+		  reloadAfterLoad();
+		});
+	  </script>
+	  
 	</body>
 </html>
 
