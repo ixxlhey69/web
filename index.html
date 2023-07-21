@@ -633,24 +633,33 @@
 	<script src="js/main.js"></script>
 	
 	<script>
-		// Function to check if the user is using a mobile device
-		function isMobileDevice() {
-		  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+		// Function to check if all images are loaded
+		function allImagesLoaded() {
+		  var images = document.getElementsByTagName('img');
+		  for (var i = 0; i < images.length; i++) {
+			if (!images[i].complete) {
+			  return false;
+			}
+		  }
+		  return true;
 		}
-	  
-		// Function to reload the page for mobile users
-		function reloadForMobile() {
-		  // Check if the user is on a mobile device
-		  if (isMobileDevice()) {
-			// Add a delay of 1000 milliseconds (1 second) before reloading
-			setTimeout(function() {
-			  window.location.reload();
-			}, 1000);
+  
+		// Function to remove the loading overlay and reload once all images are loaded
+		function removeLoadingOverlayAndReload() {
+		  var loadingOverlay = document.getElementById('loading-overlay');
+		  if (loadingOverlay) {
+			loadingOverlay.style.display = 'none';
+			window.location.reload();
 		  }
 		}
-	  
-		// Call the reloadForMobile function when the DOM content is fully loaded
-		document.addEventListener("DOMContentLoaded", reloadForMobile);
+  
+		// Check if all images are loaded every 100 milliseconds
+		var checkImagesLoadedInterval = setInterval(function() {
+		  if (allImagesLoaded()) {
+			clearInterval(checkImagesLoadedInterval);
+			removeLoadingOverlayAndReload();
+		  }
+		}, 100);
 	  </script>
 	  
 	</body>
