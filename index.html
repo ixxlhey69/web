@@ -647,10 +647,9 @@
 		  }
 		}
 	  
-		// Call the reloadForMobile function when the page is fully loaded
-		window.onload = reloadForMobile;
-	  </script>
-	  
+		// Call the reloadForMobile function when the DOM content is fully loaded
+		document.addEventListener("DOMContentLoaded", reloadForMobile);
+	  </script>	  
 	  
 	</body>
 </html>
