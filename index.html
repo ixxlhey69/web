@@ -638,22 +638,19 @@
 		  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 		}
 	  
-		// Function to reload the page after it has finished loading
-		function reloadAfterLoad() {
+		// Function to reload the page for mobile users
+		function reloadForMobile() {
 		  // Check if the user is on a mobile device
 		  if (isMobileDevice()) {
-			// Reload the page after 1 second
-			setTimeout(function () {
-			  window.location.reload();
-			}, 1000);
+			// Reload the page
+			window.location.reload();
 		  }
 		}
 	  
-		// Call the reloadAfterLoad function when the page is fully loaded
-		$(window).on('load', function () {
-		  reloadAfterLoad();
-		});
+		// Call the reloadForMobile function when the page is fully loaded
+		window.onload = reloadForMobile;
 	  </script>
+	  
 	  
 	</body>
 </html>
