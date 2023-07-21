@@ -632,7 +632,31 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
+	<script src="js/main.js"></script>
 
+	<script>
+	  // Function to adjust the layout once all images are loaded
+	  function adjustLayoutAfterImagesLoaded() {
+		var $grid = $('.grid').isotope({
+		  itemSelector: '.grid-item',
+		  percentPosition: true,
+		  masonry: {
+			columnWidth: '.grid-sizer',
+			gutter: 0
+		  }
+		});
+	
+		// layout Isotope after each image loads
+		$grid.imagesLoaded().progress(function () {
+		  $grid.isotope('layout');
+		});
+	  }
+	
+	  // Call the layout adjustment function after the page is fully loaded
+	  $(window).on('load', function () {
+		adjustLayoutAfterImagesLoaded();
+	  });
+	</script>
 
 	</body>
 </html>
