@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Izdhan</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="description" content="Portfolio for Izdhan" />
 	<meta name="keywords" content="Izdhan, Ixxlhey" />
 	<meta name="author" content="Izdhan Imran" />
@@ -79,6 +79,26 @@
 			}
 		}
 	</style>
+
+	<script>
+		// Function to check if the user is on a mobile device
+		function isMobileDevice() {
+			return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+		}
+	
+		// Function to reload the page only once after 10 seconds
+		function reloadOnceAfterDelay() {
+			if (isMobileDevice()) {
+				setTimeout(function () {
+					location.reload();
+				}, 10000); // 10 seconds delay
+			}
+		}
+	
+		// Call the function to reload only once on mobile devices
+		reloadOnceAfterDelay();
+	</script>
+
 </head>
 
 	<body>
@@ -631,36 +651,6 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
-	
-	<script>
-		// Function to check if all images are loaded
-		function allImagesLoaded() {
-		  var images = document.getElementsByTagName('img');
-		  for (var i = 0; i < images.length; i++) {
-			if (!images[i].complete) {
-			  return false;
-			}
-		  }
-		  return true;
-		}
-  
-		// Function to remove the loading overlay and reload once all images are loaded
-		function removeLoadingOverlayAndReload() {
-		  var loadingOverlay = document.getElementById('loading-overlay');
-		  if (loadingOverlay) {
-			loadingOverlay.style.display = 'none';
-			window.location.reload();
-		  }
-		}
-  
-		// Check if all images are loaded every 100 milliseconds
-		var checkImagesLoadedInterval = setInterval(function() {
-		  if (allImagesLoaded()) {
-			clearInterval(checkImagesLoadedInterval);
-			removeLoadingOverlayAndReload();
-		  }
-		}, 100);
-	  </script>
 	  
 	</body>
 </html>
