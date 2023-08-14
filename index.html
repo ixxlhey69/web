@@ -1,0 +1,130 @@
+<!doctype html>
+<html id="htmlID" lang="fr">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow, noimageai">
+	<meta name="generator" content="Portfoliobox">
+    
+
+    <title id="seoTitle"></title>
+	<meta id="seoDesc" name="description" content="">
+	<meta id="seoKeywords" name="keywords" content="">
+	<link rel="icon" id="seoSiteIcon" href="">
+
+	<meta id="seoOgTitle" property="og:title" content="Izdhan's Portfolio">
+	<meta id="seoOgSiteName" property="og:site_name" content="Izdhan's Portfolio">
+	<meta id="seoOgDesc" property="og:description" content="">
+	<meta id="seoOgImg" property="og:image" content="">
+	<meta id="seoOgUrl" property="og:url" content="">
+	<meta id="seoOgType" property="og:type" content="website" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="" />
+	<meta id="seoTwitterTitle" name="twitter:title" content="Izdhan's Portfolio" />
+	<meta id="seoTwitterDescription" name="twitter:description" content="">
+	<meta id="seoTwitterImg" name="twitter:image" content="" />
+
+
+
+    <!-- source-css -->
+<link rel="stylesheet" type="text/css" href="css/pb4.out.front.ver.1689174949708.css">
+<!-- /source-css -->
+
+    
+	</head>
+
+<body>
+
+<div id="frontApp" class="frontApp" v-cloak :class="siteState.MobileClasses && siteState.MobileClasses.Gallery && siteState.MobileClasses.Gallery['items-per-row']  ? siteState.MobileClasses.Gallery['items-per-row'] : ''">
+	<global-styles></global-styles>
+	<child-styles></child-styles>
+	<link-styles></link-styles>
+	<child-link-styles></child-link-styles>
+	<global-styles-mobile></global-styles-mobile>
+	<mobile-css-styles></mobile-css-styles>
+	<customcss-styles></customcss-styles>
+	<google-fonts-styles></google-fonts-styles>
+
+	<div class="Page" v-bind:class="{hasLeftMenu : (siteState.MainMenu.MenuType === 'left' && !hideMenu)}">
+		<component v-bind:is="siteState.MainMenu.View" v-bind:main-menu="siteState.MainMenu" v-if="!hideMenu"></component>
+
+		<router-view v-on:hidemenu="doHideMenu" v-on:hidefooter="doHideFooter"></router-view>
+
+        <site-footer v-if="siteState.HasFooter && !hideFooter"></site-footer>
+
+		<pb-checkout v-if="checkoutState.showCheckout"></pb-checkout>
+		<added-to-cart-popup v-if="checkoutState.showAddedToCart"></added-to-cart-popup>
+
+		<front-alert-popup v-if="frontAlertData.show" v-on:close="frontAlertData.show = false" v-bind:message="frontAlertData.message"></front-alert-popup>
+		<front-confirm-popup v-if="frontConfirmData.show" v-on:close="frontConfirmData.show = false" v-bind:confirm="frontConfirmData.confirm" v-bind:message="frontConfirmData.message"></front-confirm-popup>
+
+		<portfoliobox-link></portfoliobox-link>
+		<cookie-message v-if="siteState.EnableCookieMessage === 1"></cookie-message>
+		<music-player v-if="siteState._showMusicPlayer"></music-player>
+	</div>
+
+</div>
+
+<!-- source-js-1 -->
+<script src="js/pb4.out.front1.ver.1689174949713.js"></script>
+<!-- /source-js-1 -->
+
+
+<script>
+	window.pb = {
+		isAdmin : false
+	};
+
+    pages.actions.init.serverPages([{"Guid":"hiUjt1nkyEyF23jZ","SiteId":3676660,"IsStartPage":1,"HideMenu":1,"HideFooter":null,"Url":"\/izdhanportfolio","Title":"Izdhan Portfolio","SeoTitle":null,"SeoDescription":null,"ShareImage":null,"CreatedAt":"2023-08-14 11:40:56","Style":null,"UnPublish":null,"Sections":[{"Guid":"eQTXypP62KEaIJar","Idx":0,"SiteId":3676660,"PageGuid":"hiUjt1nkyEyF23jZ","ProductGuid":null,"FooterId":null,"View":"cover-temp","ViewType":"Text","ViewId":"textfullscreen2","Style":{"padding-top":"8vh","padding-bottom":"8vh","padding-left":"8vw","padding-right":"8vw","min-height":"100vh"},"Settings":{"animation":"","class":"text2"},"ElementsTop":[{"Guid":"B2EWOFD3ymwn8VTn","View":"header-view","Content":"hey there!","Style":{"margin-bottom":"0.7em","color":"#ffffff","align-self":"flex-start"},"Settings":{"animation":"fade-in"}},{"Guid":"uiPvZM8izw39WD8D","View":"longtext-view","Content":"<div>Hello, I'm Izdhan, a 19-year-old amateur photographer with a passion for capturing moments and telling stories through my lens. Photography has been a part of my life for as long as I can remember, and it has become a powerful medium for me to express my creativity and share my unique perspective with the world.<\/div><div><br><\/div><div><br>Join me on this visual journey as I continue to capture the essence of the world around us, one frame at a time. Together, let's celebrate the beauty of life and uncover the extraordinary in the ordinary.<br><\/div>","Style":{"margin-bottom":"1.1em","color":"#ffffff"},"Settings":{"animation":"fade-in"}}],"ElementsBottom":null,"ElementsFixed":{"SingleImageBg1":{"Guid":"Ur246eDDoGoDcDer","View":"singleimagebg-view","Settings":{"iframe-hide-controls":"1","iframe-auto-play":"1","iframe-mute":"1","iframe-loop":"1","iframe-cover":"1","animation":"fade-in","hover-transition":"none","bg-overlay":"rgba(255,255,255,0)","rounded":""},"Style":{"background-attachment":"fixed","background-size":"cover","height":"100vh"},"Content":{"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/ixx-0049-3b3f90.jpg","Width":6000,"Height":4000}}},"Title":null},{"Guid":"UpM5eGx8L2YHVHz2","Idx":1,"SiteId":3676660,"PageGuid":"hiUjt1nkyEyF23jZ","ProductGuid":null,"FooterId":null,"View":"dynamicgrid-temp","ViewType":"Gallery","ViewId":"dynamicgrid","Style":{"padding-top":"8vh","padding-bottom":"8vh","padding-left":"8vw","padding-right":"8vw"},"Settings":{"animation":""},"ElementsTop":[{"Guid":"q4qaK190EUoWXrHO","View":"header-view","Content":"Gallery","Style":{"margin-bottom":"0.7em","max-width":"1200px"},"Settings":{"animation":"fade-in"}},{"Guid":"it1QWq5oWjKDQoLM","View":"longtext-view","Content":"In this gallery you can see a selection of my work. I hope you enjoy.","Style":{"margin-bottom":"1.1em","max-width":"1200px","text-align":"center"},"Settings":{"animation":"fade-in"}}],"ElementsBottom":null,"ElementsFixed":{"Items1":{"Guid":"c815kctbUYluCSBf","View":"gallery-view","Settings":{"animation":"fade-in","shadows":"","rounded":"","borders":"","lb-lightbox":"lb1","lb-animation":"fade-in","lb-item-fit":"contain","lb-height":"70%","lb-figcap-position":"lbbottom1","twoone-style":"","hover-transition":"hover-opacity","item-size":"2","item-margin":"4","figcap-position":"cover1"},"Style":{"margin-top":"3em","margin-bottom":"0em"},"Content":[{"Guid":"ouUAxalcn9q3L4MD","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/-ixx5714-90e3f0.jpg","Height":6000,"Width":4000,"Alt":"","FigCaptions":[{"Guid":"yv7sxceC5405lKZD","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"xbhKpZxMgcGzAnUP","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"rPbkGi4Hw8HzBP9C","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/-ixx6961-2-4b2993.jpg","Height":6000,"Width":4000,"Alt":"","FigCaptions":[{"Guid":"bclpF48RLyguRPPi","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"pfYjfv7pAiuoMhY0","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"jPNeQx93YO1cF66e","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/-ixx6593-daf99e.jpg","Height":4000,"Width":6000,"Alt":"","FigCaptions":[{"Guid":"eoHJGfk1y8FukUot","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"UUOZTeWds7QjPWZc","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"hSukorAu7xVZiGNg","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/izdhan-imran-slqm-7pb0im-unsplash1-213dfe.jpg","Height":4032,"Width":3024,"Alt":"","FigCaptions":[{"Guid":"hcX9iE9DKsYZd1Mf","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"GY5VEMYG8Wu0jau0","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"TTlWl8YHDRYVlXxp","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/-ixx7042-e18a91.jpg","Height":4000,"Width":6000,"Alt":"","FigCaptions":[{"Guid":"eEWpEVPKFyOY2w6f","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"m07mTNvpswPDPUGK","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"mLATM1Uq8uXxJSjx","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/-ixx6902-3ae328.jpg","Height":6000,"Width":4000,"Alt":"","FigCaptions":[{"Guid":"envvpomY6iAjPr5r","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"FJ4qyQTag71vwH8M","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"vaFNMJhLTOhbiUUZ","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/izdhan-imran-sfm-vwwuqb8-unsplash1-5e3d2e.jpg","Height":4032,"Width":2688,"Alt":"","FigCaptions":[{"Guid":"ySp4cQHl3H220T7E","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"TuQCR8QCQ7l3cjtm","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"HOLfhXu81MrI3KBQ","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/izdhan-imran-c4kr1pkjig4-unsplash-a3ced6.jpg","Height":5610,"Width":3740,"Alt":"","FigCaptions":[{"Guid":"mudNIFgEv7XiwQHy","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"iS1HABfwP0nQCLdJ","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"rAAgvkIQ6pN0xMDW","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/ixx-0511-bc7d43.jpg","Height":6000,"Width":4000,"Alt":"","FigCaptions":[{"Guid":"EMrXCDFm8U0Sls5v","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"exbsKy8HI7t2qB00","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"YMYSPdi2ZbB3Upv4","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/izdhan-imran-p-mkbdtwr8i-unsplash-beeed2.jpg","Height":4032,"Width":2688,"Alt":"","FigCaptions":[{"Guid":"ObqAxPeFAWIt2X2g","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"gZFHuYsVMk8nQr45","View":"captionsubtitle-view","Content":"","Style":[]}]}},{"Guid":"fKOgcGJ1afqGqqlo","View":"item-view","Style":[],"Content":{"Link":null,"Src":"https:\/\/d37b3blifa5mva.cloudfront.net\/000_clients\/3676660\/page\/-ixx9679-06d986.jpg","Height":6000,"Width":4000,"Alt":"","FigCaptions":[{"Guid":"hygPm1xz3hqdsWus","View":"captiontitle-view","Content":"","Style":[]},{"Guid":"uePBGadVxJv1h6RR","View":"captionsubtitle-view","Content":"","Style":[]}]}}]}},"Title":null},{"Guid":"gZcorqxvm8x6wzsk","Idx":2,"SiteId":3676660,"PageGuid":"hiUjt1nkyEyF23jZ","ProductGuid":null,"FooterId":null,"View":"threecolumns-temp","ViewType":"Footer","ViewId":"footer1","Style":{"padding-top":"8vh","padding-bottom":"8vh","padding-left":"8vw","padding-right":"8vw"},"Settings":{"animation":"","class":"footer1"},"ElementsTop":[],"ElementsBottom":[{"Guid":"vUnlBsImd8l4AoG7","View":"logo-view","Settings":{"animation":"fade-in"},"Style":{"font-size":"1.6em","text-transform":"uppercase","letter-spacing":"0.1em","text-align":"center"},"Content":{"Text":"Izdhan imran","Link":"","Src":"","Height":"","Width":"","ImageHeight":"50px"}}],"ElementsFixed":{"CenteredElement1":{"Guid":"mF9nfIuGyhArD3cL","View":"shorttext-view","Style":{"text-align":"center"},"Content":":)","Settings":{"animation":"fade-in"}}},"Title":null}]}]);
+
+	site.actions.init.site({"Guid":"x23225bhIbQu2Zdw","Id":3676660,"IsPublished":2,"HidePbLink":null,"Url":"ixxlhey.portfoliobox.net","Title":"Izdhan's Portfolio","MainMenu":{"View":"menu1-menu","ViewId":"centered1","Guid":"MAINMENU","Links":[],"MenuType":"","Settings":{"class":"centered1","mobile-menu-icon-color":"rgba(0,0,0,1)","mobile-menu-icon-position":"mobileIconDefault"},"Style":{"padding-bottom":"","padding-top":""},"ElementsTop":[{"Guid":"MAINMENULOGO","View":"logo-view","Content":{"Text":"Izdhan Imran","Src":"","Link":"\/","Width":"","Height":"","ImageHeight":"50px"},"Settings":{"animation":"fade-in"},"Style":{"text-transform":"uppercase","letter-spacing":"0.072em","text-align":"center","font-size":"1.8em","font-weight":"bold","font-family":""}}],"ElementsBottom":[{"Guid":"MAINMENULINKS","View":"mainmenulinks-view","Settings":{"animation":"fade-in"},"Style":{"margin-top":"1em","font-size":"1em","letter-spacing":"0.04em","font-weight":"lighter","font-family":"","text-transform":"none"}}]},"HasFooter":null,"GlobalClasses":{"Page":{"font-family":"'Montserrat',sans-serif","font-size":"76.5%","background-color":"#000000","color":"#ffffff"},"Header":{"font-size":"1.71em","letter-spacing":"0.072em","text-transform":"uppercase","font-weight":"bold"},"Header2":{"font-size":"1.4em","font-weight":"bold","letter-spacing":"0.03em"},"Header3":{"font-size":"1.2em","font-weight":"bold","letter-spacing":"0.04em"},"LongText":{"line-height":"1.7em"},"Button":{"font-size":"1.1em","letter-spacing":"0.02em"},"CaptionTitle":{"font-size":"1.2em","font-weight":"bold","letter-spacing":"0.04em"},"CaptionSubTitle":{"font-size":"1em"},"CaptionText":{"line-height":"1.6em"},"CaptionButton":{"font-size":"1.1em","color":""},"BlogHeader":{"font-size":"1.9em","text-transform":"uppercase","letter-spacing":"0.04em","font-weight":"bold"},"BlogText":{"line-height":"1.8em"},"ProductHeader":{"font-size":"1.9em","text-transform":"uppercase","letter-spacing":"0.04em","font-weight":"bold"},"ProductSubHeader":{"font-size":"1.2em"},"ProductPrice":{"font-size":"1.1em"},"ProductText":{"line-height":"1.8em"},"ProductButton":{"font-size":"1.1em"},"Form":[],"CvList":[],"CalendarList":[],"GeneralList":[],"Links":{"font-weight":"lighter","letter-spacing":"0.06em"},"SocialMedia":{"font-weight":"lighter","letter-spacing":"0.06em"}},"MobileClasses":null,"ChildClasses":null,"MobileStyles":null,"GlobalLinks":{"LongText":{"a":{"color":"#D09EFC"},"a:hover":{"text-decoration":"underline"}},"Link":{"a:hover":{"color":"#D09EFC"}},"MainMenuLinks":{"a:hover":{"color":"#D09EFC"}},"SocialMedia":{"a:hover":{"color":"#D09EFC"}},"Links":{"a:hover":{"color":"#D09EFC"}}},"ChildLinks":null,"BlogSettings":{"DisableComments":"0","Url":"blog","Settings":{"icon-type":"titles"},"ShareButtons":[{"Guid":"blogtwitter","Type":"twitter","Title":"Twitter"},{"Guid":"blogpinterest","Type":"pinterest","Title":"Pinterest"},{"Guid":"blogfacebook","Type":"facebook","Title":"Facebook"},{"Guid":"bloglinkedin","Type":"linkedin","Title":"LinkedIn"}]},"StoreSettings":{"Currency":"USD","ReturnPolicy":"","TermsAndConditions":"","ThankYouMessage":"","CheckoutEmail":"","Url":"store","Settings":{"hide-share":"0","icon-type":"square","show-cart":"","hide-phone":"","hide-address":"","hide-zip":"","hide-city":"","hide-state":"","hide-country":"","hide-shipping":"","hide-message":"","hide-news":"","variants-format":"","self-pickup":"0"},"ShareButtons":[{"Guid":"storetwitter","Type":"twitter","Title":"Twitter"},{"Guid":"storepinterest","Type":"pinterest","Title":"Pinterest"},{"Guid":"storefacebook","Type":"facebook","Title":"Facebook"},{"Guid":"storelinkedin","Type":"linkedin","Title":"LinkedIn"}],"CompanyInfo":{"Name":"","Address":"","Country":{"Name":"","Code":""},"Phone":"","Email":"","OrgId":""},"Payment":{"Method":1,"ManualPaymentInfo":"","EnablePayPal":0,"PayPalEmail":"","AcceptCreditCard":0,"StripeId":"","EnableInvoice":1,"InvoiceMessage":"","PaymentInstructions":"","Timeframe":30},"Shipping":{"Method":0,"Zones":[{"Guid":"123global","DisableToOther":0,"Country":{"Name":"World","Code":"WORLD"},"WeightRates":[{"Guid":"everymin","Min":0,"Max":2,"Price":40},{"Guid":"everymiddle","Min":2,"Max":5,"Price":80},{"Guid":"everymax","Min":5,"Max":10,"Price":120}]}]},"Taxes":{"Method":0,"ShippingNeedsVat":0,"Zones":[{"Guid":"123global","DisableToOther":0,"TaxPercent":0,"Country":{"Name":"World","Code":"WORLD"}}]},"Discounts":[]},"SeoDescription":null,"SeoLangId":"en","SeoKeywords":null,"SiteIcon":null,"SeoTwitterUsername":null,"ShareImage":null,"DisableRightClick":null,"EnableCookieMessage":null,"CookieMessage":null,"CustomCss":null,"GoogleFonts":[{"family":"'Montserrat',sans-serif","title":"Montserrat","occurrences":1,"type":"google"}],"GoogleSubset":null,"GoogleAnalyticsId":null,"GoogleTagManagerId":null,"MetaVerificationName":null,"MetaVerificationContent":null,"PixelEventManagerId":null,"Sections":null,"Status":null,"Situation":null});
+	checkoutStore.actions.init();
+
+    posts.actions.init([]);
+    products.actions.init([]);
+	productCategories.actions.init([]);
+	blogCategories.actions.init([]);
+	translations.actions.init([]);
+</script>
+
+<script type="application/ld+json" id="jsonLd"></script>
+
+<link rel="alternate" type="application/rss+xml" title="" href="/rss" />
+
+
+<!-- source-js -->
+<script src="js/pb4.out.front.ver.1689174949708.js"></script>
+<!-- /source-js -->
+
+<script>
+	if(site.state.DisableRightClick) {
+		document.addEventListener('contextmenu', event => event.preventDefault());
+	}
+</script>
+
+<script src="js/api.js?render=explicit"></script>
+
+<!-- If stripe -->
+<script src="js/v3"></script>
+
+<script>
+    if(window.location.href.indexOf('?paypal=paid') != -1) {
+        checkoutStore.actions.clearCart();
+	    let thankYouMessage = "<div class='alertHeader'>"+translations.state.ThankYou+"</div>"+translations.state.ThankYouForMakingOrder;
+	    if(site.state.StoreSettings && site.state.StoreSettings.ThankYouMessage){
+		    thankYouMessage = site.state.StoreSettings.ThankYouMessage;
+	    }
+	    frontApp.alert(thankYouMessage);
+    }
+</script>
+<script>
+	if ('scrollRestoration' in history) {
+		history.scrollRestoration = 'manual';
+	}
+</script>
+</body>
+</html>
+
